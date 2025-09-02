@@ -1,39 +1,49 @@
 <!doctype html>
-<html lang="zh-Hant">
+<!-- 語法：<!doctype html>  宣告這是一份 HTML5 文件，照抄即可 -->
+<html lang="zh-Hant"> <!-- 語法：<html lang="語言(問GPT)">  網頁的主要語言 -->
 <head>
-  <meta charset="utf-8">
-  <title>HTML 常用語法速查表</title>
+  <meta charset="utf-8"> <!-- 語法：<meta charset="utf-8">  設定編碼，避免亂碼，通常固定照抄就好 -->
+  <title>HTML 常用語法速查表</title> <!-- 語法：<title>標題</title>  顯示在瀏覽器標籤上 -->
 </head>
 <body>
-  <h1>HTML 常用語法速查表</h1>
+  <h1>HTML 常用語法速查表</h1> <!-- 語法：<h1>文字</h1>  主標題 -->
 
   <!-- 標題 -->
   <h2>標題 (Heading)</h2>
+  <!-- 語法：<h1>~<h6> 由大到小的標題 -->
   <h1>這是 H1</h1>
   <h2>這是 H2</h2>
   <h3>這是 H3</h3>
 
   <!-- 段落與文字 -->
   <h2>段落與文字 (Paragraph & Text)</h2>
+  <!-- 語法：<p>文字</p>  建立段落 -->
   <p>這是一段文字。</p>
+  <!-- 語法：<strong>文字</strong> 粗體強調 -->
+  <!-- 語法：<em>文字</em> 斜體強調 -->
   <p><strong>粗體文字</strong>，<em>斜體文字</em>。</p>
+  <!-- 語法：<br> 換行 -->
   <p>換行用 <br> 這裡就換行了。</p>
 
   <!-- 連結 -->
   <h2>超連結 (Link)</h2>
+  <!-- 語法：<a href="網址" target="_blank">文字</a>  建立超連結，新分頁打開 -->
   <a href="https://example.com" target="_blank">點我前往 Example</a>
 
   <!-- 圖片 -->
   <h2>圖片 (Image)</h2>
+  <!-- 語法：<img src="圖片路徑或網址" alt="替代文字"> -->
   <img src="https://via.placeholder.com/150" alt="範例圖片">
 
   <!-- 清單 -->
   <h2>清單 (List)</h2>
+  <!-- 語法：<ul><li>項目</li></ul>  無序清單 (bullet points) -->
   <p>無序清單：</p>
   <ul>
     <li>項目 A</li>
     <li>項目 B</li>
   </ul>
+  <!-- 語法：<ol><li>項目</li></ol>  有序清單 (數字編號) -->
   <p>有序清單：</p>
   <ol>
     <li>第一步</li>
@@ -42,6 +52,12 @@
 
   <!-- 表格 -->
   <h2>表格 (Table)</h2>
+  <!-- 語法：
+       <table>
+         <tr><th>表頭</th><th>表頭</th></tr>
+         <tr><td>資料</td><td>資料</td></tr>
+       </table>
+  -->
   <table border="1">
     <tr>
       <th>日期</th>
@@ -59,17 +75,26 @@
 
   <!-- 表單 -->
   <h2>表單 (Form)</h2>
+  <!-- 語法：<form> ...輸入內容... </form> -->
   <form>
+    <!-- 單行輸入框 -->
+    <!-- 語法：<label for="id">文字</label><input id="id" type="text"> -->
     <label for="name">姓名：</label>
     <input id="name" type="text"><br><br>
 
+    <!-- Email 輸入 -->
+    <!-- 語法：<input type="email"> -->
     <label for="email">Email：</label>
     <input id="email" type="email"><br><br>
 
+    <!-- 單選按鈕 -->
+    <!-- 語法：<input type="radio" name="同組名稱" value="值"> -->
     <p>性別：</p>
     <label><input type="radio" name="gender" value="f"> 女</label>
     <label><input type="radio" name="gender" value="m"> 男</label><br><br>
 
+    <!-- 下拉選單 -->
+    <!-- 語法：<select><option>選項</option></select> -->
     <label for="fav">喜歡的飲料：</label>
     <select id="fav">
       <option>可樂</option>
@@ -77,14 +102,20 @@
       <option>咖啡</option>
     </select><br><br>
 
+    <!-- 多行輸入 -->
+    <!-- 語法：<textarea rows="行數" cols="欄數"></textarea> -->
     <label for="msg">留言：</label><br>
     <textarea id="msg" rows="3" cols="30"></textarea><br><br>
 
+    <!-- 按鈕 -->
+    <!-- 語法：<button type="submit">文字</button>  送出表單 -->
     <button type="submit">送出</button>
   </form>
 
   <!-- 區塊元素 -->
   <h2>常見區塊 (Div / Span)</h2>
+  <!-- 語法：<div>內容</div>  區塊元素，用來排版 -->
+  <!-- 語法：<span>內容</span>  行內元素，用來局部修飾 -->
   <div style="border:1px solid black; padding:5px;">
     這是 div 區塊
     <span style="color:red;">這裡是 span 行內文字</span>
@@ -92,11 +123,12 @@
 
   <!-- 水平線 -->
   <h2>分隔線 (Horizontal Rule)</h2>
+  <!-- 語法：<hr>  插入水平線 -->
   <hr>
 
   <!-- 註解 -->
   <h2>註解 (Comment)</h2>
+  <!-- 語法：<!-- 這是註解 --> -->
   <p>程式碼裡寫 <code>&lt;!-- 這是註解 --&gt;</code>，不會顯示在網頁。</p>
-
 </body>
 </html>
