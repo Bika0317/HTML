@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>HTML 常用語法速查表</title>
+</head>
+<body>
+  <h1>HTML 常用語法速查表</h1>
+
+  <!-- 標題 -->
+  <h2>標題 (Heading)</h2>
+  <h1>這是 H1</h1>
+  <h2>這是 H2</h2>
+  <h3>這是 H3</h3>
+
+  <!-- 段落與文字 -->
+  <h2>段落與文字 (Paragraph & Text)</h2>
+  <p>這是一段文字。</p>
+  <p><strong>粗體文字</strong>，<em>斜體文字</em>。</p>
+  <p>換行用 <br> 這裡就換行了。</p>
+
+  <!-- 連結 -->
+  <h2>超連結 (Link)</h2>
+  <a href="https://example.com" target="_blank">點我前往 Example</a>
+
+  <!-- 圖片 -->
+  <h2>圖片 (Image)</h2>
+  <img src="https://via.placeholder.com/150" alt="範例圖片">
+
+  <!-- 清單 -->
+  <h2>清單 (List)</h2>
+  <p>無序清單：</p>
+  <ul>
+    <li>項目 A</li>
+    <li>項目 B</li>
+  </ul>
+  <p>有序清單：</p>
+  <ol>
+    <li>第一步</li>
+    <li>第二步</li>
+  </ol>
+
+  <!-- 表格 -->
+  <h2>表格 (Table)</h2>
+  <table border="1">
+    <tr>
+      <th>日期</th>
+      <th>事項</th>
+    </tr>
+    <tr>
+      <td>週一</td>
+      <td>寫作業</td>
+    </tr>
+    <tr>
+      <td>週三</td>
+      <td>練歌</td>
+    </tr>
+  </table>
+
+  <!-- 表單 -->
+  <h2>表單 (Form)</h2>
+  <form>
+    <label for="name">姓名：</label>
+    <input id="name" type="text"><br><br>
+
+    <label for="email">Email：</label>
+    <input id="email" type="email"><br><br>
+
+    <p>性別：</p>
+    <label><input type="radio" name="gender" value="f"> 女</label>
+    <label><input type="radio" name="gender" value="m"> 男</label><br><br>
+
+    <label for="fav">喜歡的飲料：</label>
+    <select id="fav">
+      <option>可樂</option>
+      <option>紅茶</option>
+      <option>咖啡</option>
+    </select><br><br>
+
+    <label for="msg">留言：</label><br>
+    <textarea id="msg" rows="3" cols="30"></textarea><br><br>
+
+    <button type="submit">送出</button>
+  </form>
+
+  <!-- 區塊元素 -->
+  <h2>常見區塊 (Div / Span)</h2>
+  <div style="border:1px solid black; padding:5px;">
+    這是 div 區塊
+    <span style="color:red;">這裡是 span 行內文字</span>
+  </div>
+
+  <!-- 水平線 -->
+  <h2>分隔線 (Horizontal Rule)</h2>
+  <hr>
+
+  <!-- 註解 -->
+  <h2>註解 (Comment)</h2>
+  <p>程式碼裡寫 <code>&lt;!-- 這是註解 --&gt;</code>，不會顯示在網頁。</p>
+
+</body>
+</html>
